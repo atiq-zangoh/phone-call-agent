@@ -1,0 +1,11 @@
+{
+    "trunk": {
+        "name": "my-sip-trunk",
+        "address": "my-sip-trunk-livekit.pstn.twilio.com",
+        "numbers": [
+            "+18143343668"
+        ],
+        "auth_username": "atiq",
+        "auth_password": "Twilio@atiq7"
+    }
+}

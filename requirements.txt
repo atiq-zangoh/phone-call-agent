@@ -1,0 +1,10 @@
+livekit >= 0.18.2
+livekit-agents>=0.12.11
+livekit-plugins-openai>=0.10.17
+livekit-plugins-deepgram>=0.6.17
+livekit-plugins-silero>=0.7.4
+livekit-plugins-turn-detector>=0.4.0
+livekit-plugins-rag
+livekit-plugins-elevenlabs
+livekit-plugins-cartesia
+python-dotenv~=1.0
