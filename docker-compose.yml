@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  phone-rag-agent:
+    build: .
+    container_name: phone-rag-agent
+    environment:
+      DEEPGRAM_API_KEY: ${DEEPGRAM_API_KEY}
+      ELEVEN_API_KEY: ${ELEVEN_API_KEY}
+      LIVEKIT_API_KEY: ${LIVEKIT_API_KEY}
+      LIVEKIT_API_SECRET: ${LIVEKIT_API_SECRET}
+      LIVEKIT_SIP_URI: ${LIVEKIT_SIP_URI}
+      LIVEKIT_SIP_URL: ${LIVEKIT_SIP_URL}
+      LIVEKIT_URL: ${LIVEKIT_URL}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SIP_OUTBOUND_TRUNK_ID: ${SIP_OUTBOUND_TRUNK_ID}
+      TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID}
+      TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN}
+      TWILIO_PHONE_NUMBER: ${TWILIO_PHONE_NUMBER}
+
+    volumes:
+      - .:/app
+    restart: unless-stopped
